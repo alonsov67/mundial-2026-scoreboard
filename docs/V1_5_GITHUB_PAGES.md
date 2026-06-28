@@ -28,6 +28,18 @@ Archivo:
 .github/workflows/deploy-pages.yml
 ```
 
+Repositorio objetivo:
+
+```text
+https://github.com/alonsov67/mundial-2026-scoreboard
+```
+
+URL esperada de la app:
+
+```text
+https://alonsov67.github.io/mundial-2026-scoreboard/
+```
+
 ## Fuente oficial
 
 Endpoint:

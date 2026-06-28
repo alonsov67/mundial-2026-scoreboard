@@ -55,7 +55,21 @@ Pasos:
 5. Ir a `Settings > Pages`.
 6. En `Build and deployment`, seleccionar `Source: GitHub Actions`.
 7. Ejecutar el workflow `Deploy GitHub Pages` o hacer push a `main`.
-8. Abrir la URL publicada: `https://<usuario>.github.io/<repositorio>/`.
+8. Abrir la URL publicada: `https://alonsov67.github.io/mundial-2026-scoreboard/`.
+
+Comandos de subida, una vez creado el repo publico en GitHub:
+
+```powershell
+git remote add origin https://github.com/alonsov67/mundial-2026-scoreboard.git
+git push -u origin main
+```
+
+Si `origin` ya existe:
+
+```powershell
+git remote set-url origin https://github.com/alonsov67/mundial-2026-scoreboard.git
+git push -u origin main
+```
 
 Workflow incluido:
 

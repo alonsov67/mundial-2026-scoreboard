@@ -4,6 +4,18 @@
 
 Usar GitHub Free con repositorio publico y GitHub Pages, pero sin aceptar aportes externos.
 
+Repositorio objetivo:
+
+```text
+https://github.com/alonsov67/mundial-2026-scoreboard
+```
+
+Sitio esperado:
+
+```text
+https://alonsov67.github.io/mundial-2026-scoreboard/
+```
+
 ## Lo que si se puede garantizar
 
 - Cualquier persona puede leer, clonar y descargar el repositorio publico.
