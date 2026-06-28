@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mundial de Futbol 2026 | Scoreboard</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="scoreboard-hero" aria-label="Marcador principal">
+        <div class="hero-copy">
+          <p class="eyebrow">FIFA World Cup 2026</p>
+          <h1>Mundial de Futbol 2026</h1>
+          <p id="sourceStatus" class="source-status">Consultando fuente oficial FIFA...</p>
+        </div>
+
+        <div class="quick-stats" aria-label="Resumen del torneo">
+          <div>
+            <span id="statTotal">--</span>
+            <small>Partidos</small>
+          </div>
+          <div>
+            <span id="statDone">--</span>
+            <small>Con resultado</small>
+          </div>
+          <div>
+            <span id="statPending">--</span>
+            <small>Pendientes</small>
+          </div>
+          <div>
+            <span id="statLive">--</span>
+            <small>En actualizacion</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="Controles">
+        <div class="segmented" role="tablist" aria-label="Vista">
+          <button class="segment active" type="button" data-view="board">Scoreboard</button>
+          <button class="segment" type="button" data-view="calendar">Calendario</button>
+          <button class="segment" type="button" data-view="data">Datos</button>
+        </div>
+
+        <label class="search-box">
+          <span>Buscar</span>
+          <input id="searchInput" type="search" placeholder="Equipo, estadio, ciudad..." autocomplete="off" />
+        </label>
+
+        <label class="select-box">
+          <span>Ronda</span>
+          <select id="stageFilter"></select>
+        </label>
+
+        <label class="select-box">
+          <span>Grupo</span>
+          <select id="groupFilter"></select>
+        </label>
+
+        <button id="refreshButton" class="refresh-button" type="button" title="Consultar nuevamente FIFA">
+          <span aria-hidden="true">↻</span>
+          Actualizar
+        </button>
+      </section>
+
+      <section id="errorPanel" class="error-panel hidden" role="alert"></section>
+
+      <section id="boardView" class="view active" aria-label="Vista scoreboard">
+        <aside class="groups-panel">
+          <div class="panel-heading">
+            <h2>Grupos</h2>
+            <span>Tabla calculada con marcadores oficiales disponibles</span>
+          </div>
+          <div id="groupsGrid" class="groups-grid"></div>
+        </aside>
+
+        <section class="field-panel">
+          <div class="field-lines" aria-hidden="true"></div>
+          <div class="panel-heading field-heading">
+            <h2>Eliminatorias y partidos</h2>
+            <span id="visibleCount">-- partidos visibles</span>
+          </div>
+          <div id="stageLanes" class="stage-lanes"></div>
+        </section>
+      </section>
+
+      <section id="calendarView" class="view" aria-label="Calendario por fecha">
+        <div id="calendarList" class="calendar-list"></div>
+      </section>
+
+      <section id="dataView" class="view" aria-label="Trazabilidad de datos">
+        <div class="data-panel">
+          <h2>Trazabilidad</h2>
+          <dl>
+            <div>
+              <dt>Endpoint oficial</dt>
+              <dd><a id="endpointLink" href="#" target="_blank" rel="noreferrer">ND</a></dd>
+            </div>
+            <div>
+              <dt>Articulo oficial</dt>
+              <dd><a id="articleLink" href="#" target="_blank" rel="noreferrer">ND</a></dd>
+            </div>
+            <div>
+              <dt>Ultima consulta</dt>
+              <dd id="fetchedAt">ND</dd>
+            </div>
+            <div>
+              <dt>Advertencia</dt>
+              <dd id="sourceNote">ND</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="data-panel">
+          <h2>Proximo partido</h2>
+          <div id="nextMatch" class="next-match">ND</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

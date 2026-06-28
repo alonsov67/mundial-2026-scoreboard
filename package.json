@@ -1,0 +1,15 @@
+{
+  "name": "mundial-2026-scoreboard",
+  "version": "1.5.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Scoreboard local para consultar y visualizar partidos del Mundial de Futbol 2026 desde fuentes oficiales FIFA.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check scripts/export-static-data.js",
+    "export:static": "node scripts/export-static-data.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

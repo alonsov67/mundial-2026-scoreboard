@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mundial 2026">
+  <rect width="64" height="64" rx="12" fill="#075a40"/>
+  <circle cx="32" cy="32" r="20" fill="#ffffff"/>
+  <path d="M32 12 42 25 37 44H27L22 25 32 12Z" fill="#10202c"/>
+  <path d="M14 31 22 25 27 44 18 43Z" fill="#0d63b7"/>
+  <path d="M50 31 42 25 37 44 46 43Z" fill="#e22d56"/>
+  <circle cx="32" cy="32" r="6" fill="#f1b933"/>
+</svg>
